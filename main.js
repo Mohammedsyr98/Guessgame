@@ -148,7 +148,7 @@ let hintCount = 2;
 let hint = document.querySelector(".hint");
 hint.addEventListener("click", function () {
   for (let i = 1; i < 10; i++) {
-    let randomHint = test[Math.floor(Math.random() * test.length)];
+    let randomHint = test[Math.floor(Math.random() * test.length)].toUpperCase();
     if (
       inputBoxes[inputvalue].children[test.indexOf(randomHint) + 1].children[0]
         .value == ""
@@ -158,7 +158,7 @@ hint.addEventListener("click", function () {
 
         inputBoxes[inputvalue].children[
           test.indexOf(randomHint) + 1
-        ].children[0].value = test[test.indexOf(randomHint)];
+        ].children[0].value = test[test.indexOf(randomHint)].toUpperCase();
         hintCount--;
         hint.textContent = `${hintCount} Hint`;
         if (hintCount == 0) {
