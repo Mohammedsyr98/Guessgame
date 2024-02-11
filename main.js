@@ -2,7 +2,7 @@
 // Step 2 write function when click check the work
 // step 3 hint (s)
 
-let words = ["Play", "Game", "Four", "Five", "Best", "Cute", "Cool"];
+let words = ["PLAY", "GAME", "FOUR", "FIVE", "BEST", "CUTE", "COOL"];
 let test = words[Math.floor(Math.random() * words.length)];
 console.log(test);
 let inputBoxes = document.querySelectorAll(".input-boxes");
@@ -11,10 +11,16 @@ let tryCount = 0;
 let score = 0;
 let inputvalue = 0;
 for (let m = 0; m < 5; m++) {
-  inputBoxes[m].children[1].children[0].addEventListener("input", function (e) {
-    e.target.value = e.target.value.toUpperCase();
-  });
+  for (let n = 1; n < 5; n++) {
+    inputBoxes[m].children[n].children[0].addEventListener(
+      "input",
+      function (e) {
+        e.target.value = e.target.value.toUpperCase();
+      }
+    );
+  }
 }
+
 
 for (let i = 1; i < 4; i++) {
   inputBoxes[inputvalue].children[i].children[0].addEventListener(
