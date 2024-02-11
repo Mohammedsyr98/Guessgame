@@ -1,0 +1,206 @@
+body {
+  background-color: black;
+}
+.game {
+  margin: 0 auto;
+  width: 780px;
+  background-color: #eee;
+  font-family: sans-serif;
+}
+.game .color-one,
+.game .color-two,
+.game .color-three {
+  display: flex;
+  gap: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.game .color-one div {
+  height: 22px;
+  width: 22px;
+  background-color: #f99c1d;
+}
+.game .color-two div {
+  height: 22px;
+  width: 22px;
+  background-color: #07a486;
+}
+.game .color-three div {
+  height: 22px;
+  width: 22px;
+  background-color: black;
+}
+.colors h2 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.game h1 {
+  text-align: center;
+  background-color: white;
+  padding: 10px 0;
+}
+.box {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 20px;
+  gap: 20px;
+}
+input {
+  width: 40px;
+  height: 40px;
+}
+.colors {
+  flex-basis: 50%;
+}
+
+.game-area {
+  flex-basis: 50%;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.game-area .button {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.game-area .button button:nth-child(1) {
+  flex-basis: 75%;
+  padding: 8px;
+  background-color: #e1492e;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.game-area .button button:nth-child(2) {
+  flex-basis: 25%;
+  background-color: #01797b;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+}
+.input-boxes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.input-boxes input {
+  border: none;
+  padding: 0;
+  font-size: 30px;
+}
+.input-boxes input::placeholder {
+  text-align: center;
+  font-size: 28px;
+  color: white;
+}
+input {
+  font-size: 37px;
+  font-weight: 600;
+  text-align: center;
+  background-color: white;
+}
+/* .input-boxes:nth-of-type(1) div:nth-of-type(1) input {
+  background-color: #93d3c6;
+}
+.input-boxes:nth-of-type(1) div:nth-of-type(2) input {
+  background-color: #9fa0a9;
+}
+.input-boxes:nth-of-type(1) div:nth-of-type(3) input,
+.input-boxes:nth-of-type(2) div:nth-of-type(3) input {
+  background-color: #9fa0a9;
+}
+.input-boxes:nth-of-type(1) div:nth-of-type(4) input,
+.input-boxes:nth-of-type(2) div:nth-of-type(4) input {
+  background-color: #93d3c6;
+}
+.input-boxes:nth-of-type(1) div:nth-of-type(5) input,
+.input-boxes:nth-of-type(2) div:nth-of-type(5) input {
+  background-color: #9fa0a9;
+}
+.input-boxes:nth-of-type(1) div:nth-of-type(6) input,
+.input-boxes:nth-of-type(2) div:nth-of-type(6) input {
+  background-color: #9fa0a9;
+}
+
+.input-boxes:nth-of-type(2) div:nth-of-type(1) input {
+  background-color: #f7ce98;
+}
+.input-boxes:nth-of-type(2) div:nth-of-type(2) input {
+  background-color: #f7ce98;
+}
+.input-boxes:nth-of-type(4) input {
+  background-color: #faf7f7;
+}
+.input-boxes:nth-of-type(5) input {
+  background-color: #faf7f7;
+}
+*/
+.input-boxes input {
+  position: relative;
+  background-color: #dfdfdf;
+}
+.No1 input {
+  background-color: white;
+}
+.input-boxes input:focus {
+  outline: 0;
+}
+.input-boxes div::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-bottom: 2px solid black;
+}
+.input-boxes p {
+  font-size: 21px;
+  margin: 0;
+  font-weight: 600;
+}
+
+#btn {
+  background-color: #eee;
+  height: 170px;
+  width: 400px;
+  text-align: center;
+  z-index: 99;
+  position: relative;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#btn h1 {
+  padding-top: 20px;
+}
+
+#btn button {
+  position: absolute;
+  background-color: red;
+  border: none;
+  border-radius: 100%;
+  top: -12.5px;
+  right: -12.5px;
+  height: 25px;
+  width: 25px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+#icon {
+  width: 50px;
+}
